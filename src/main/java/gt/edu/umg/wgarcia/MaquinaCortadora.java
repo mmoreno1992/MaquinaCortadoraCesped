@@ -38,6 +38,10 @@ public class MaquinaCortadora {
             case DERECHO:
                 nodo = new Nodo(Lado.IZQUIERDO, Estado.LIMPIO, estadoActual.estadoDerecho);
         }
+        System.out.println("------------------");
+        System.out.println("Mover hacia -> " + nodo.lado);
+        System.out.println("Limpiar");
+        System.out.println("------------------");
         return nodo;
     }
 
@@ -46,10 +50,7 @@ public class MaquinaCortadora {
         System.out.println();
         System.out.printf("Lado Izquierdo [%s], Lado Derecho [%s] ", estadoActual.estadoIzquierdo, estadoActual.estadoDerecho);
         System.out.println();
-        System.out.println("------------------");
-        System.out.println("Mover hacia -> " + nodo.lado);
-        System.out.println("Limpiar");
-        System.out.println("------------------");
+
     }
 
     private void agregaEstadoRecorrido(Nodo estado) {
